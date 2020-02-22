@@ -16,7 +16,7 @@ And configure `commitlint.config.js` to use multiscope plugin.
 module.exports = {
   plugins: ['commitlint-plugin-multiscope'],
   rules: {
-    'multiscope/multiscope': [2, 'always', {
+    'multiscope': [2, 'always', {
       delimiter: ',',
       enum: [
         'api',

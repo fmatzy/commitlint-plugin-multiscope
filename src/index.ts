@@ -1,10 +1,10 @@
 import multiscope from './multiscope';
 import { CommitlintPlugin } from './type';
 
-export const multiScopePlugin: CommitlintPlugin = {
+const multiScopePlugin: CommitlintPlugin = {
   rules: {
     multiscope,
   },
 };
 
-export default multiScopePlugin;
+export = multiScopePlugin;
