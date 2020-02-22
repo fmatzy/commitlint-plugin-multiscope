@@ -9,6 +9,7 @@ npm-debug.log*
 .eslintrc
 .eslintignore
 jest.config.js
+commitlint.config.js
 .prettierignore
 .prettierrc
 tsconfig.json
