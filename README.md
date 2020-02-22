@@ -1,5 +1,7 @@
 # Commitlint Plugin Multiscope
 
+![Node.js CI](https://github.com/fmatzy/commitlint-plugin-multiscope/workflows/Node.js%20CI/badge.svg)
+
 A commitlint plugin that supports multiple scopes
 
 ## Getting Started
