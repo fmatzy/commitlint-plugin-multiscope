@@ -1,0 +1,14 @@
+src
+
+logs
+*.log
+npm-debug.log*
+
+.vscode
+.github
+.eslintrc
+.eslintignore
+jest.config.js
+.prettierignore
+.prettierrc
+tsconfig.json
