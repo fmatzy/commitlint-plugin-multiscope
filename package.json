@@ -1,0 +1,56 @@
+{
+  "name": "commitlint-plugin-multiscope",
+  "description": "Commitlint plugin that supports multiple scopes",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf ./lib",
+    "test": "jest",
+    "lint": "eslint ./src/**/*.ts",
+    "format": "prettier --write ./src/**/*.ts"
+  },
+  "author": "fmatzy",
+  "keywords": [
+    "typescript",
+    "commitlint",
+    "commitlintplugin"
+  ],
+  "dependencies": {
+    "@commitlint/parse": "^8.3.4",
+    "@commitlint/rules": "^8.3.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^24.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "husky": "^4.0.9",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.4"
+  },
+  "peerDependencies": {
+    "@commitlint/lint": ">=7.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint",
+      "prettier --write"
+    ]
+  }
+}
